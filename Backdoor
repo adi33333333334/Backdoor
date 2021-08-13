@@ -11,15 +11,14 @@ function scan()
 			local yes = {}
 			wait(0.1)
 			if game.Workspace.adinewaccbcemailforg.Humanoid.WalkSpeed == 99 then
-				print(v.Parent.Parent)
-                print(v.Parent)
-				print(v.Name)
+				print(v:GetFullName())
+                
 				wait(0.5)
 				
 				
 				return
 			else
-				print(v.Name .. "isn't a backdoor!")
+				
 				
 
 
