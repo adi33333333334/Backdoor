@@ -10,7 +10,7 @@ function scan()
 	v:InvokeServer([[game.Workspace.adinewaccbcemailforg.Humanoid.WalkSpeed = 99]])
 	wait(0.1)
 	if game.Workspace.adinewaccbcemailforg.Humanoid.WalkSpeed == 99 then
-	print(v:GetFullName() .. "" .. "is a backdoor!" .. "" .. "type = " ..  "" .. v.ClassName)
+	print(v:GetFullName())
 	end
 	end
 		if v:IsA("RemoteEvent") then
@@ -18,7 +18,7 @@ function scan()
 			local yes = {}
 			wait(0.1)
 			if game.Workspace.adinewaccbcemailforg.Humanoid.WalkSpeed == 99 then
-				print(v:GetFullName() .. v.ClassName)
+				print(v:GetFullName())
                 
 				wait(0.5)
 				
