@@ -6,12 +6,19 @@ end)
 
 function scan()
 	for i,v in pairs(game:GetDescendants()) do
+	if v:IsA("RemoteFunction") then
+	v:InvokeServer([[game.Workspace.adinewaccbcemailforg.Humanoid.WalkSpeed = 99]])
+	wait(0.1)
+	if game.Workspace.adinewaccbcemailforg.Humanoid.WalkSpeed == 99 then
+	print(v:GetFullName() .. "" .. "is a backdoor!" .. "" .. "type = " ..  "" .. v.ClassName)
+	end
+	end
 		if v:IsA("RemoteEvent") then
 			v:FireServer([[game.Workspace.adinewaccbcemailforg.Humanoid.WalkSpeed = 99]])
 			local yes = {}
 			wait(0.1)
 			if game.Workspace.adinewaccbcemailforg.Humanoid.WalkSpeed == 99 then
-				print(v:GetFullName())
+				print(v:GetFullName() .. v.ClassName)
                 
 				wait(0.5)
 				
@@ -19,7 +26,7 @@ function scan()
 				return
 			else
 				
-				
+				print(v.Name .. "" .. "isn't a backdoor")
 
 
 			end
