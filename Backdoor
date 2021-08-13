@@ -8,9 +8,10 @@ function scan()
 	for i,v in pairs(game:GetDescendants()) do
 	if v:IsA("RemoteFunction") then
 	v:InvokeServer([[game.Workspace.adinewaccbcemailforg.Humanoid.WalkSpeed = 99]])
-	wait(0.1)
+	wait(0.3)
 	if game.Workspace.adinewaccbcemailforg.Humanoid.WalkSpeed == 99 then
 	print(v:GetFullName())
+	print(v.ClassName
 	end
 	end
 		if v:IsA("RemoteEvent") then
@@ -19,6 +20,7 @@ function scan()
 			wait(0.1)
 			if game.Workspace.adinewaccbcemailforg.Humanoid.WalkSpeed == 99 then
 				print(v:GetFullName())
+				print(v.ClassName)
                 
 				wait(0.5)
 				
